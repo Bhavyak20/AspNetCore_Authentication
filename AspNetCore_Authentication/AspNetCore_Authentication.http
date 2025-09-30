@@ -1,0 +1,6 @@
+@AspNetCore_Authentication_HostAddress = http://localhost:5082
+
+GET {{AspNetCore_Authentication_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
