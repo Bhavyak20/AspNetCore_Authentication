@@ -17,7 +17,7 @@ namespace AspNetCore_Authentication.Middleware
         {
             if(context.Request.Path.ToString().Contains ("Login"))
             {
-                _next(context);
+              await  _next(context);
                 return;
             }
             var authizationToken = context.Request.Headers["Authorization"].ToString();
